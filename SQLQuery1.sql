@@ -19,7 +19,7 @@ class Program
             {
                 string url = "https://api.themoviedb.org/3/search/movie"
                     + "?api_key=" + apiKey
-                    + "&query=" + Uri.EscapeDataString(movieName)
+                    + "&query=" + movieName
                     + "&language=en-US";
 
                 HttpResponseMessage response = await client.GetAsync(url);
